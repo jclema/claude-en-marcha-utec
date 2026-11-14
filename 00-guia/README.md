@@ -2,6 +2,7 @@
 
 - Guía del participante: [Google Docs](https://docs.google.com/document/d/1DRpriWOaWGNzSqTLSSxME55HejNPiJ_S_DEVI4o58CE/edit)
 - Descargar Claude Desktop: https://claude.com/download
+- Prompt para generar la presentación de conceptos con Claude Design (36 diapositivas: Skills, Plugins, conectores, agentes, subagentes, loops, SDD y más): [Google Docs](https://docs.google.com/document/d/1Oj_SHhjhO4JI4JxYztE3qQyRQ0XyV3fAOlAubZshSr0/edit)
 
 ## Checklist antes de empezar
 - [ ] Claude Desktop actualizado y con tu cuenta Pro iniciada

@@ -25,3 +25,27 @@ La carpeta [agents](agents) tiene 3 subagentes listos. Cópialos a `.claude/agen
 Usa los subagentes buscador, verificador y redactor para producir un informe de estado del arte sobre [tema]. Que el buscador y el verificador trabajen en paralelo cuando sea posible. Guarda el informe final en informe-[fecha].md.
 ```
 Docs: https://code.claude.com/docs/en/sub-agents
+
+
+## Subagentes: créalos en lenguaje natural
+Un subagente es Claude con una sola tarea e instrucciones propias: trabaja en su propio contexto y te reporta el resultado. No necesitas comandos: en la pestaña Code pide "Crea un subagente que haga X" o "Crea tres subagentes, uno para X, otro para Y y otro para Z". Para guardarlo y reutilizarlo, usa `/agents`.
+
+**Regla de oro:** el agente prepara, tú apruebas. Ningún agente envía, publica o paga sin ti.
+
+### Formaciones más útiles para docentes
+| Formación | Cómo funciona | Ejemplo docente |
+|---|---|---|
+| Pipeline (en cadena) | Investigar, luego redactar, luego pulir | Buscador, verificador y redactor para tu estado del arte |
+| En paralelo (fan-out y fan-in) | Varios agentes trabajan a la vez y se unen sus resultados | Tres agentes revisan literatura en inglés, español y portugués |
+| Coordinador y trabajadores | Un agente planifica y delega | "Prepara el estado del arte de mi capítulo 2" |
+| Evaluador y optimizador | Uno redacta, otro califica contra la rúbrica y repiten hasta que pasa | Mejorar un caso de estudio hasta que cumpla tus criterios (loop goal-based) |
+| Consejo | Varios agentes proponen, se revisan entre sí y uno decide | Jurado simulado del plan de tesis: metodología, estadística y redacción |
+
+Ruta recomendada: primero un agente de investigación, luego evaluador y optimizador, luego consejo. Usa la formación en paralelo solo si el trabajo de verdad se puede dividir. Cada agente consume tokens de tu plan: empieza con pocos.
+
+Prompt de ejemplo (consejo):
+```
+Crea tres subagentes para revisar este plan de tesis [adjunto]: uno experto en metodología, otro en estadística y otro en redacción académica. Cada uno entrega sus observaciones por separado; luego revisen las observaciones de los otros y un cuarto agente integra un informe final priorizado. No modifiques el documento: solo propone.
+```
+
+Fuente: guía de Cindy Zhu, https://cindyzhu.com.au/guides/how-to-make-your-first-claude-subagent · Docs oficiales: https://code.claude.com/docs/en/sub-agents
