@@ -24,14 +24,29 @@
 | 12:05 - 12:50 | 6. Construir con SDD y Claude Code, compartir en GitHub |
 | 12:50 - 13:00 | Cierre y plan de 30 días |
 
-## Configuración óptima (resumen)
-1. Settings > Privacy: desactiva "Help improve Claude".
-2. Settings > Profile: preferencias personales (texto en la guía).
-3. Memoria activada.
-4. Permisos en Manual para acciones con consecuencias.
-5. Customize > Skills: Skills de documentos activadas.
-6. Customize > Connectors: Google Drive, Calendar, Gmail, Consensus y Canva.
-7. Extensión Claude in Chrome instalada.
+## Cómo usar los prompts de este repo
+1. Selecciona todo el texto del bloque de código y cópialo (Cmd+C en Mac, Ctrl+C en Windows). En GitHub también puedes usar el botón de copiar que aparece arriba a la derecha del bloque.
+2. Pégalo en la caja de mensajes de Claude (Cmd+V o Ctrl+V).
+3. Reemplaza cada texto entre `[corchetes]` por tu dato y borra los corchetes.
+4. Presiona Enter para enviar. Shift+Enter hace un salto de línea sin enviar.
+
+Puedes dictar: clic en el micrófono de la caja de mensajes, habla y clic de nuevo para terminar.
+
+## Primeros 3 minutos en Claude Desktop
+1. Abre Claude Desktop e inicia sesión. Para confirmar que tu plan es Pro, haz clic en tu nombre o iniciales (esquina inferior izquierda).
+2. Ubica la barra lateral izquierda: nueva conversación, Proyectos, Code, Scheduled, Customize y tus conversaciones recientes.
+3. Ubica la caja de mensajes (abajo al centro) y a su alrededor: el botón `+` (adjuntar archivos, activar conectores y Research), el selector de modelo (Opus, Sonnet o Haiku), el botón de carpeta (trabajar con archivos de tu computadora) y el micrófono.
+4. Escribe: `Hola, en 3 líneas dime qué puedes hacer por un docente universitario` y presiona Enter.
+5. Arrastra tu sílabo a la caja de mensajes y escribe: `Resume este sílabo en 5 viñetas y sugiere una mejora concreta`.
+
+## Configuración óptima, paso a paso
+1. **Privacidad:** clic en tu nombre (esquina inferior izquierda) > Settings > Privacy y apaga "Help improve Claude".
+2. **Preferencias:** Settings > Profile. Completa tu nombre, pega en el campo de preferencias personales el texto de la guía del participante, ajusta los corchetes y guarda.
+3. **Memoria:** en Settings, sección de memoria (Capabilities o Memory según la versión), activa generar memoria a partir de tus chats y buscar y referenciar chats anteriores.
+4. **Permisos:** en la caja de mensajes, modo de permisos en Manual para acciones con consecuencias. Si no ves el selector, Claude te pedirá aprobación antes de actuar: lee siempre qué va a hacer.
+5. **Skills del sistema:** Customize > Skills (o Settings > Capabilities): Skills de documentos activadas.
+6. **Conectores:** Customize > Connectors > Browse. Conecta Google Drive, Calendar, Gmail, Consensus y Canva: clic en el conector > Connect > elige tu cuenta en el navegador > acepta permisos > vuelve a la app. En cada conversación revisa con `+` que estén encendidos. Si tu cuenta UTEC bloquea la conexión, usa tu cuenta personal de Google.
+7. **Claude in Chrome:** instala la extensión oficial de Anthropic desde la Chrome Web Store, inicia sesión y fíjala con el alfiler en el ícono de Extensiones (pieza de rompecabezas).
 
 ## Plan de 30 días
 | Semana | Reto |

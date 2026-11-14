@@ -17,8 +17,19 @@ Prompt para crearla:
 Dentro de mi carpeta Claude crea esta estructura de carpetas y, en cada una, un archivo LEEME.md de 3 líneas que explique qué va ahí: 00_Sobre-mi, 01_Docencia (con una subcarpeta para el curso [nombre del curso]), 02_Investigacion (con una subcarpeta para mi línea [tema]), 03_Trabajo-Gestion, 04_Personal, 05_Skills, 06_Specs.
 ```
 
+Envía este prompt en una conversación de Cowork con la carpeta `Claude` seleccionada (puedes seguir en la del bloque 1). Luego, en Finder o el Explorador, arrastra tu sílabo, rúbrica y lectura a `01_Docencia/[curso]` y uno o dos papers a `02_Investigacion/[tema]`.
+
 ## Proyectos
 Crea 4: Docencia · [curso], Investigación · [tema], Gestión y Personal. En cada uno sube Sobre-mi-docente.md y los archivos del área.
+
+Paso a paso:
+1. En la barra lateral haz clic en **Proyectos** y luego en **Nuevo proyecto**.
+2. Escribe el nombre (por ejemplo, `Docencia · Gestión de Operaciones`) y una descripción de una línea, y crea el proyecto.
+3. Dentro del proyecto, en el panel de la derecha, busca **Instrucciones** (Instructions), haz clic para editar, pega las instrucciones de abajo, cambia los corchetes y guarda.
+4. En el mismo panel, en **Archivos** (Files), haz clic en `+` y sube `Sobre-mi-docente.md` (está en `Documentos > Claude > 00_Sobre-mi`) y los archivos del área.
+5. Para trabajar dentro del proyecto, escribe en la caja de mensajes de la página del proyecto: todo chat que abras ahí hereda su contexto.
+
+Prueba rápida en el Proyecto de Docencia: `¿Qué sabes de mí y de este curso? Resúmelo en 5 líneas`. Si responde algo genérico, revisa que estés dentro del proyecto (su nombre aparece arriba de la conversación) y que los archivos se hayan subido.
 
 ### Instrucciones: Docencia
 ```

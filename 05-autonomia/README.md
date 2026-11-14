@@ -7,12 +7,18 @@ Primero lee los 4 tipos de loops y sus recetas: [loops/README.md](loops/README.m
 - **Subagentes:** un coordinador reparte trabajo entre especialistas con contexto propio.
 
 ## Agente coordinador (carril base, en el chat)
+Abre una conversación nueva de Cowork, haz clic en `+`, activa Consensus y Google Drive, pega el prompt y envíalo. Si la carpeta `Claude-UTEC/Monitoreo` no existe en tu Drive, Claude intentará crearla; si no puede, créala tú en drive.google.com y vuelve a pedirle que guarde el informe.
 ```
 Actúa como coordinador de un equipo de 3 especialistas para este objetivo: [objetivo]. Trabaja en etapas separadas y muéstrame el resultado de cada una: 1) Buscador: encuentra papers (con Consensus) y noticias relevantes de los últimos 7 días. 2) Verificador: comprueba cada fuente, descarta lo que no se pueda abrir y marca la confianza. 3) Redactor: escribe un informe de una página con los 5 hallazgos más relevantes, cada uno con enlace y por qué me importa. Guarda el informe en Google Drive en la carpeta Claude-UTEC/Monitoreo con la fecha en el nombre.
 ```
 
 ## Programarlo
-Scheduled > Create with Claude. Pega el prompt anterior, cadencia semanal (lunes 07:00), guarda y prueba con Run now. Para que corra en la nube debe usar conectores, no archivos locales. Guía: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
+1. En la barra lateral ve a **Scheduled** y elige **Create with Claude** (o pide en una conversación: "programa esta tarea").
+2. Pega el prompt anterior como instrucción de la tarea.
+3. Cadencia semanal, lunes a las 07:00.
+4. Guarda y prueba con **Run now**. Al terminar, verifica en Google Drive que el informe esté en `Claude-UTEC/Monitoreo`.
+
+La tarea debe usar solo conectores (Drive, Gmail, Consensus), no archivos de tu computadora. Si a la hora programada tu laptop o la app están cerradas, según tu versión la tarea corre en la nube o se ejecuta cuando vuelvas a abrir Claude: revisa su historial en Scheduled. Guía: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
 
 Más ideas:
 - Resumen diario de agenda y correos pendientes a las 07:00.

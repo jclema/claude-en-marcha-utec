@@ -1,6 +1,10 @@
 # 01 · Contexto con reverse prompting
 
-Trabaja en Cowork con tu carpeta `Claude` seleccionada.
+## Paso 0: crea y selecciona tu carpeta maestra
+1. Abre Finder (Mac) o el Explorador de archivos (Windows), entra a Documentos, clic derecho > Nueva carpeta y llámala `Claude`.
+2. Abre una conversación nueva en Cowork, haz clic en el botón de carpeta de la caja de mensajes, entra a Documentos, elige `Claude` y confirma (si la app pide permiso para acceder a la carpeta, acepta). Cuando veas el nombre de la carpeta junto a la caja de mensajes, está lista.
+3. Haz clic en `+` y confirma que Gmail, Google Calendar y Google Drive estén activados.
+4. Haz los pasos 1, 2 y 3 en esta misma conversación. En el paso 1 Claude trabajará entre 2 y 5 minutos; si te pide permiso para leer tus apps, acepta.
 
 ## Paso 1: Claude investiga tu trabajo
 ```
@@ -12,10 +16,14 @@ Revisa mis últimos 30 días en Gmail (prioriza los correos que yo envié), Goog
 Ahora entrevístame para cubrir los vacíos de tu segunda lista. Usa como guía estas 15 preguntas, salta las que ya puedas responder con lo que encontraste y hazme una sola pregunta a la vez, esperando mi respuesta antes de pasar a la siguiente: 1) ¿Qué cursos dictas, en qué nivel y cómo son tus estudiantes? 2) ¿Cómo es una semana normal para ti? 3) ¿Qué es lo que más tiempo te quita? 4) ¿Por qué eres conocido o cuál es tu especialidad? 5) ¿Cuál es tu meta principal este año? 6) ¿Qué quieres lograr en los próximos 90 días? 7) ¿En qué estás trabajando ahora y qué proyecto importa más? 8) ¿Qué plazos importantes se vienen? 9) ¿Qué apps usas a diario y dónde viven tus notas y tareas? 10) ¿Qué sigues haciendo a mano y qué te encantaría automatizar? 11) ¿Prefieres respuestas cortas o detalladas, en viñetas o en párrafos? 12) ¿Cómo describirías tu tono (formal o cercano) y qué palabras evitas? 13) ¿Qué no debería hacer nunca? 14) ¿Cuáles son tus fortalezas y tus puntos ciegos? 15) ¿Qué más debería saber de ti?
 ```
 
+Responde por voz: clic en el micrófono, habla, clic de nuevo para terminar, revisa el texto y presiona Enter.
+
 ## Paso 3: guarda tus dos archivos
 ```
 Con todo lo que encontraste y lo que te respondí, crea dos archivos Markdown en mi carpeta Claude/00_Sobre-mi: 1) Sobre-mi-docente.md: quién soy, mis cursos, estudiantes, investigación, estilo, criterios de calidad, herramientas y preferencias de trabajo. Escríbelo para que otro asistente lo lea y me entienda en dos minutos. 2) Mapa-de-oportunidades.md: una tabla con mis 5 tareas más repetitivas, cuánto tiempo me quitan por semana (estimado), y qué capa de Claude las resolvería mejor (Proyecto, Skill, tarea programada, agente o herramienta propia), ordenadas de mayor a menor impacto.
 ```
+
+Comprueba: en Finder o el Explorador abre `Documentos > Claude > 00_Sobre-mi` y verifica que estén los dos archivos. Si no están, escribe: `Guarda los dos archivos en la carpeta seleccionada y dime la ruta exacta`.
 
 Sin conectores: reemplaza el paso 1 por "No tienes acceso a mis apps: hazme 15 preguntas, una a la vez, para conocerme".
 
