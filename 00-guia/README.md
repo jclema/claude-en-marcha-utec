@@ -48,7 +48,7 @@ Puedes dictar: clic en el micrófono de la caja de mensajes, habla y clic de nue
 6. **Conectores:** Customize > Connectors > Browse. Conecta Google Drive, Calendar, Gmail, Consensus y Canva: clic en el conector > Connect > elige tu cuenta en el navegador > acepta permisos > vuelve a la app. En cada conversación revisa con `+` que estén encendidos. Si tu cuenta UTEC bloquea la conexión, usa tu cuenta personal de Google.
 7. **Claude in Chrome:** instala la extensión oficial de Anthropic desde la Chrome Web Store, inicia sesión y fíjala con el alfiler en el ícono de Extensiones (pieza de rompecabezas). Para usarla desde Claude Desktop: Settings > Customize > Connectors > **Claude in Chrome** > Configure y actívalo. Viene apagado en cada conversación: enciéndelo con `+` cuando lo necesites. En la pestaña Code se conecta con `/chrome`. Solo Google Chrome y plan pago. Guía oficial: https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome
 
-## Carril avanzado: Composio y Playwright (opcional)
+## Carril avanzado: Composio (opcional)
 Son herramientas de terceros: instálalas con tu cuenta personal y revisa qué permisos das.
 
 ### Composio: más de 1000 apps
@@ -63,35 +63,10 @@ Conecta Claude con apps que no están en el directorio de conectores (Notion, Sl
    ```
 Docs: https://docs.composio.dev/docs/composio-connect
 
-### Playwright: un navegador que Claude controla
-Abre un navegador limpio (sin tus sesiones) para probar páginas o extraer datos de forma repetible. Requiere Node.js LTS (https://nodejs.org).
-- **Pestaña Code:** pide `Agrega el servidor MCP de Playwright (npx @playwright/mcp@latest) a mi configuración de Claude Code`, o en la terminal:
-  ```
-  claude mcp add playwright npx @playwright/mcp@latest
-  ```
-  Luego abre una sesión nueva.
-- **Chat y Cowork:** Settings > Developer > Edit Config. En `claude_desktop_config.json` pega (si ya tiene contenido, agrega solo el bloque `playwright` dentro de `mcpServers`):
-  ```json
-  {
-    "mcpServers": {
-      "playwright": {
-        "command": "npx",
-        "args": ["@playwright/mcp@latest"]
-      }
-    }
-  }
-  ```
-  Guarda, cierra Claude Desktop por completo (Cmd+Q en Mac; en Windows, clic derecho en el ícono junto al reloj > Salir) y vuelve a abrirlo.
-- **Prueba:** `Usa Playwright para abrir [URL] y dime el título de la página y sus 5 primeros enlaces.`
-
-Docs: https://playwright.dev/mcp/clients/claude-desktop
-
-**¿Claude in Chrome o Playwright?** Claude in Chrome usa tu Chrome real con tus sesiones abiertas (sitios donde ya iniciaste sesión). Playwright abre un navegador limpio y controlado (pruebas y extracciones repetibles).
-
 ## Plan de 30 días
 | Semana | Reto |
 |---|---|
 | 1 | Revisa el primer informe de tu tarea programada y ajústala. Completa 3 lecciones de /teach. |
 | 2 | Automatiza la tarea número 2 de tu Mapa de oportunidades. Usa en clase un material creado con Claude. |
-| 3 | Crea una Skill propia y súbela a `aportes/`. Prueba /anatomy para una clase. |
+| 3 | Crea una Skill propia y súbela a `aportes/`. Busca con find-skills una Skill de la comunidad para tu curso y pruébala. |
 | 4 | Instala una Skill directamente desde el repo de su autor y haz un fork + pull request a este repo. Comparte cuánto tiempo ahorraste. |

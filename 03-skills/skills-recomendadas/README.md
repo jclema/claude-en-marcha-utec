@@ -9,15 +9,6 @@ Estas Skills pertenecen a sus autores y se usan bajo su licencia. Revisa siempre
 - Uso: `/teach Quiero aprender [tema]. Mi nivel es [nivel]. Tengo 20 minutos al día.`
 - Nota del autor: tiene un bug abierto en sus rutas (issue #377) y recomienda verificar las fuentes primarias.
 
-## Anatomy, de wheresryan22 (licencia MIT)
-- Original: https://github.com/wheresryan22/anatomy
-- Qué hace: explica un concepto técnico construyéndolo como una máquina interactiva (SVG isométrico).
-- Requisitos: pensada para la pestaña Code (Claude Code). Necesita Node.js 20.10 o superior y Chrome.
-- Instalación: descarga el ZIP oficial (https://github.com/wheresryan22/anatomy/archive/refs/heads/main.zip), descomprime, renombra la carpeta `anatomy-main` a `anatomy` y muévela a `~/.claude/skills/`. Detalles en el README del autor.
-- Uso: `/anatomy explica cómo funciona [concepto], interactivo, versión simple con máximo 3 controles.`
-- Consume mucho tiempo y uso: empieza siempre con una versión simple.
-
-
 ## connect-apps, de Composio
 - Original: https://github.com/ComposioHQ/awesome-claude-skills (carpeta `connect-apps`)
 - Qué hace: conecta Claude con más de 1000 apps (Gmail, Slack, GitHub, Notion y más) para ejecutar acciones reales, no solo redactar.
