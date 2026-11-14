@@ -6,6 +6,8 @@ Una Skill es una carpeta con un archivo `SKILL.md` que enseña a Claude a hacer 
 - En la app: Customize > Skills
 - Repositorio oficial de Anthropic: https://github.com/anthropics/skills
 - Este repo: [skills-utec](skills-utec) y [skills-recomendadas](skills-recomendadas)
+- Directorio abierto con ranking por instalaciones: https://skills.sh
+- Skill find-skills: le pides a Claude "busca una Skill para X" y la encuentra por ti (ver skills-recomendadas)
 
 ## Antes de instalar una Skill de terceros
 1. Abre su `SKILL.md` y lee qué hace.

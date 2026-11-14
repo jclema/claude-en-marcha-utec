@@ -9,7 +9,7 @@ Revisa mis últimos 30 días en Gmail (prioriza los correos que yo envié), Goog
 
 ## Paso 2: Claude te entrevista
 ```
-Ahora entrevístame para cubrir los vacíos de tu segunda lista. Hazme una sola pregunta a la vez, máximo 15 en total, enfocadas en: mis cursos y estudiantes, mi investigación, mi estilo de enseñanza y de escritura, mis criterios de calidad, mis herramientas y lo que más me quita tiempo. Espera mi respuesta antes de pasar a la siguiente.
+Ahora entrevístame para cubrir los vacíos de tu segunda lista. Usa como guía estas 15 preguntas, salta las que ya puedas responder con lo que encontraste y hazme una sola pregunta a la vez, esperando mi respuesta antes de pasar a la siguiente: 1) ¿Qué cursos dictas, en qué nivel y cómo son tus estudiantes? 2) ¿Cómo es una semana normal para ti? 3) ¿Qué es lo que más tiempo te quita? 4) ¿Por qué eres conocido o cuál es tu especialidad? 5) ¿Cuál es tu meta principal este año? 6) ¿Qué quieres lograr en los próximos 90 días? 7) ¿En qué estás trabajando ahora y qué proyecto importa más? 8) ¿Qué plazos importantes se vienen? 9) ¿Qué apps usas a diario y dónde viven tus notas y tareas? 10) ¿Qué sigues haciendo a mano y qué te encantaría automatizar? 11) ¿Prefieres respuestas cortas o detalladas, en viñetas o en párrafos? 12) ¿Cómo describirías tu tono (formal o cercano) y qué palabras evitas? 13) ¿Qué no debería hacer nunca? 14) ¿Cuáles son tus fortalezas y tus puntos ciegos? 15) ¿Qué más debería saber de ti?
 ```
 
 ## Paso 3: guarda tus dos archivos
