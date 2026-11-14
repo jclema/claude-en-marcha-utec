@@ -18,6 +18,13 @@ Estas Skills pertenecen a sus autores y se usan bajo su licencia. Revisa siempre
 - Consume mucho tiempo y uso: empieza siempre con una versión simple.
 
 
+## connect-apps, de Composio
+- Original: https://github.com/ComposioHQ/awesome-claude-skills (carpeta `connect-apps`)
+- Qué hace: conecta Claude con más de 1000 apps (Gmail, Slack, GitHub, Notion y más) para ejecutar acciones reales, no solo redactar.
+- Instalación (pestaña Code): `npx skills add ComposioHQ/awesome-claude-skills --skill connect-apps` y sigue sus instrucciones; pide una API key gratuita de https://platform.composio.dev
+- En Claude Desktop sin terminal: agrega Composio como custom connector con la URL `https://connect.composio.dev/mcp` (pasos en [00-guia](../../00-guia/README.md#composio-más-de-1000-apps)).
+- Seguridad: da acceso solo a las apps que necesitas y usa tu cuenta personal.
+
 ## find-skills, de Vercel Labs (licencia MIT)
 - Original: https://www.skills.sh/vercel-labs/skills/find-skills (código en https://github.com/vercel-labs/skills)
 - Qué hace: es la Skill para encontrar Skills. Cuando preguntas "¿cómo hago X?" o "busca una Skill para X", revisa el ranking de skills.sh (Skills más instaladas y probadas), busca con el CLI `npx skills find`, te recomienda opciones priorizando instalaciones (1K+), reputación del autor (Anthropic, Vercel) y estrellas en GitHub, y puede instalarlas por ti.

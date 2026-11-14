@@ -46,7 +46,47 @@ Puedes dictar: clic en el micrófono de la caja de mensajes, habla y clic de nue
 4. **Permisos:** en la caja de mensajes, modo de permisos en Manual para acciones con consecuencias. Si no ves el selector, Claude te pedirá aprobación antes de actuar: lee siempre qué va a hacer.
 5. **Skills del sistema:** Customize > Skills (o Settings > Capabilities): Skills de documentos activadas.
 6. **Conectores:** Customize > Connectors > Browse. Conecta Google Drive, Calendar, Gmail, Consensus y Canva: clic en el conector > Connect > elige tu cuenta en el navegador > acepta permisos > vuelve a la app. En cada conversación revisa con `+` que estén encendidos. Si tu cuenta UTEC bloquea la conexión, usa tu cuenta personal de Google.
-7. **Claude in Chrome:** instala la extensión oficial de Anthropic desde la Chrome Web Store, inicia sesión y fíjala con el alfiler en el ícono de Extensiones (pieza de rompecabezas).
+7. **Claude in Chrome:** instala la extensión oficial de Anthropic desde la Chrome Web Store, inicia sesión y fíjala con el alfiler en el ícono de Extensiones (pieza de rompecabezas). Para usarla desde Claude Desktop: Settings > Customize > Connectors > **Claude in Chrome** > Configure y actívalo. Viene apagado en cada conversación: enciéndelo con `+` cuando lo necesites. En la pestaña Code se conecta con `/chrome`. Solo Google Chrome y plan pago. Guía oficial: https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome
+
+## Carril avanzado: Composio y Playwright (opcional)
+Son herramientas de terceros: instálalas con tu cuenta personal y revisa qué permisos das.
+
+### Composio: más de 1000 apps
+Conecta Claude con apps que no están en el directorio de conectores (Notion, Slack, Trello, HubSpot y muchas más).
+1. Crea una cuenta gratuita en https://composio.dev
+2. En Claude Desktop: Settings > Customize > Connectors > `+` > **Add custom connector**.
+3. Nombre `Composio`, URL `https://connect.composio.dev/mcp`. Clic en Add, luego Connect, y autoriza en el navegador.
+4. En una conversación activa Composio con `+` y pide, por ejemplo, `Conecta mi Notion`. La primera vez Claude te da un enlace para autorizar cada app.
+5. En la pestaña Code, alternativa con la Skill connect-apps de Composio:
+   ```
+   npx skills add ComposioHQ/awesome-claude-skills --skill connect-apps
+   ```
+Docs: https://docs.composio.dev/docs/composio-connect
+
+### Playwright: un navegador que Claude controla
+Abre un navegador limpio (sin tus sesiones) para probar páginas o extraer datos de forma repetible. Requiere Node.js LTS (https://nodejs.org).
+- **Pestaña Code:** pide `Agrega el servidor MCP de Playwright (npx @playwright/mcp@latest) a mi configuración de Claude Code`, o en la terminal:
+  ```
+  claude mcp add playwright npx @playwright/mcp@latest
+  ```
+  Luego abre una sesión nueva.
+- **Chat y Cowork:** Settings > Developer > Edit Config. En `claude_desktop_config.json` pega (si ya tiene contenido, agrega solo el bloque `playwright` dentro de `mcpServers`):
+  ```json
+  {
+    "mcpServers": {
+      "playwright": {
+        "command": "npx",
+        "args": ["@playwright/mcp@latest"]
+      }
+    }
+  }
+  ```
+  Guarda, cierra Claude Desktop por completo (Cmd+Q en Mac; en Windows, clic derecho en el ícono junto al reloj > Salir) y vuelve a abrirlo.
+- **Prueba:** `Usa Playwright para abrir [URL] y dime el título de la página y sus 5 primeros enlaces.`
+
+Docs: https://playwright.dev/mcp/clients/claude-desktop
+
+**¿Claude in Chrome o Playwright?** Claude in Chrome usa tu Chrome real con tus sesiones abiertas (sitios donde ya iniciaste sesión). Playwright abre un navegador limpio y controlado (pruebas y extracciones repetibles).
 
 ## Plan de 30 días
 | Semana | Reto |

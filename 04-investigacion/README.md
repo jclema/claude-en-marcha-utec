@@ -21,7 +21,7 @@ Usa Consensus para buscar la literatura revisada por pares más relevante de 202
 | 1. Claude lee la página | Una o pocas páginas públicas | Pega el enlace y pide la extracción |
 | 2. Claude in Chrome | Sitios donde hay que navegar, filtrar o paginar | Con la extensión, pide recorrer el sitio y extraer a una tabla |
 | 3. Apify (conector) | Extracción a escala con scrapers ya hechos | Customize > Connectors > Apify. Docs: https://docs.apify.com/integrations/mcp |
-| 4. Claude Code | Recolección repetible | Pide un script que extraiga y guarde un CSV |
+| 4. Claude Code | Recolección repetible | Pide un script que extraiga y guarde un CSV, o usa Playwright ([instalación](../00-guia/README.md#playwright-un-navegador-que-claude-controla)) |
 
 ```
 Entra a [URL pública]. Extrae [qué datos] en una tabla con columnas [columnas], guárdala como CSV en mi carpeta Claude/02_Investigacion/[tema] e indica la fecha de extracción y la URL de origen.
