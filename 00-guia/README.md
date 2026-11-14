@@ -45,7 +45,7 @@ Puedes dictar: clic en el micrófono de la caja de mensajes, habla y clic de nue
 3. **Memoria:** en Settings, sección de memoria (Capabilities o Memory según la versión), activa generar memoria a partir de tus chats y buscar y referenciar chats anteriores.
 4. **Permisos:** en la caja de mensajes, modo de permisos en Manual para acciones con consecuencias. Si no ves el selector, Claude te pedirá aprobación antes de actuar: lee siempre qué va a hacer.
 5. **Skills del sistema:** Customize > Skills (o Settings > Capabilities): Skills de documentos activadas.
-6. **Conectores:** Customize > Connectors > Browse. Conecta Google Drive, Calendar, Gmail, Consensus y Canva: clic en el conector > Connect > elige tu cuenta en el navegador > acepta permisos > vuelve a la app. En cada conversación revisa con `+` que estén encendidos. Si tu cuenta UTEC bloquea la conexión, usa tu cuenta personal de Google.
+6. **Conectores:** Customize > Connectors > Browse. Conecta Google Drive, Calendar, Gmail y Consensus: clic en el conector > Connect > elige tu cuenta en el navegador > acepta permisos > vuelve a la app. En cada conversación revisa con `+` que estén encendidos. Si tu cuenta UTEC bloquea la conexión, usa tu cuenta personal de Google. **Canvas** (el LMS de UTEC) no tiene conector oficial en Claude: se conecta con Composio (ver abajo).
 7. **Claude in Chrome:** instala la extensión oficial de Anthropic desde la Chrome Web Store, inicia sesión y fíjala con el alfiler en el ícono de Extensiones (pieza de rompecabezas). Para usarla desde Claude Desktop: Settings > Customize > Connectors > **Claude in Chrome** > Configure y actívalo. Viene apagado en cada conversación: enciéndelo con `+` cuando lo necesites. En la pestaña Code se conecta con `/chrome`. Solo Google Chrome y plan pago. Guía oficial: https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome
 
 ## Carril avanzado: Composio (opcional)
@@ -62,6 +62,18 @@ Conecta Claude con apps que no están en el directorio de conectores (Notion, Sl
    npx skills add ComposioHQ/awesome-claude-skills --skill connect-apps
    ```
 Docs: https://docs.composio.dev/docs/composio-connect
+
+### Canvas (LMS de UTEC) con Composio
+Canvas no tiene conector oficial en Claude; Composio es el camino más simple.
+1. Haz primero los pasos 1 a 4 de Composio.
+2. En una conversación nueva activa Composio con `+` y escribe: `Conecta mi cuenta de Canvas. La dirección de mi Canvas es [la URL con la que entras a Canvas de UTEC].`
+3. Claude te dará un enlace de Composio: ábrelo e inicia sesión con tu cuenta de Canvas de UTEC. Si Composio pide un **token de acceso**: en Canvas ve a Cuenta > Configuración > Integraciones aprobadas > **+ Nuevo token de acceso** (Account > Settings > Approved Integrations > + New Access Token), ponle de nombre `Claude` y una fecha de expiración, y pégalo solo en la ventana de Composio, nunca en el chat. Si UTEC no permite crear tokens o pide credenciales institucionales, consulta a TI de UTEC.
+4. Prueba primero solo con lectura: `Lista mis cursos de Canvas y las tareas con fecha de entrega en los próximos 14 días. No modifiques nada.`
+5. Para crear contenido (tareas, quizzes, anuncios, módulos o eventos): `Prepara en mi curso [nombre] un borrador de anuncio sobre [tema] y muéstramelo antes de publicar.`
+
+**Cuidado:** Canvas tiene datos de tus estudiantes (entregas y notas). Claude prepara, tú publicas. No le pidas calificar ni publicar notas de forma automática; usa un curso de prueba si lo tienes.
+
+Guía de Composio para Canvas: https://composio.dev/toolkits/canvas/framework/claude-cowork
 
 ## Plan de 30 días
 | Semana | Reto |
