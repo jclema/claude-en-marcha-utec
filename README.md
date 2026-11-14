@@ -13,14 +13,14 @@ Recursos del workshop aplicado de Claude Desktop para docentes de la Facultad de
 | [02-segundo-cerebro](02-segundo-cerebro) | Estructura de carpetas e instrucciones de Proyectos | 2 |
 | [03-skills](03-skills) | Skills UTEC listas para instalar y Skills recomendadas | 3 |
 | [04-investigacion](04-investigacion) | Prompts de investigación y scraping | 4 |
-| [05-autonomia](05-autonomia) | Tareas programadas, agente coordinador y subagentes | 5 |
+| [05-autonomia](05-autonomia) | Loops, tareas programadas, agente coordinador y subagentes | 5 |
 | [06-construir](06-construir) | Plantilla de spec (SDD) y ejemplo | 6 |
 | [datos-ficticios](datos-ficticios) | CSV de demanda, trabajos de ejemplo y caso | 3, 4, 6 |
 | [aportes](aportes) | Skills, specs y herramientas creadas por los docentes | 6 |
 
-## La escalera
+## De prompts a Loops: la escalera
 
-Prompt → Contexto → Proyecto → Skill → Tarea programada → Agente y subagentes → Herramienta propia (SDD + Claude Code)
+Prompt → Contexto → Proyecto → Skill → Loops (turn-based, goal-based, time-based y proactive) → Herramienta propia (SDD + Claude Code)
 
 Regla de oro: usa la solución más simple que resuelva el problema. Fuente: [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents).
 

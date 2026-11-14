@@ -4,7 +4,7 @@ SDD (Spec-Driven Development): primero se especifica qué construir, después se
 
 1. Escribe la spec con Claude (modelo Opus) usando el prompt de abajo. Guarda `spec.md` en `Claude/06_Specs/[herramienta]/`.
 2. En la pestaña Code, abre esa carpeta, activa el modo plan (Shift+Tab) y pide: `Lee spec.md. Propón un plan de implementación como una sola página HTML autocontenida (sin servidor ni base de datos). No escribas código hasta que yo apruebe el plan.`
-3. Aprueba el plan, deja que construya y verifica: `Revisa la herramienta contra cada criterio de aceptación de spec.md. Dime cuáles se cumplen y cuáles no, y corrige los que fallen.`
+3. Aprueba el plan, deja que construya y verifica con un loop goal-based: `/goal la herramienta cumple todos los criterios de aceptación de spec.md. Detente después de 5 intentos.` (sin /goal: `Revisa cada criterio de aceptación de spec.md y corrige los que fallen.`)
 4. Publica y sube tu spec y tu HTML a `aportes/<tu-usuario>/`.
 
 ## Prompt de entrevista para la spec

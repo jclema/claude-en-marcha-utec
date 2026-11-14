@@ -1,4 +1,6 @@
-# 05 · Autonomía: tareas programadas, agentes y subagentes
+# 05 · Loops: tareas programadas, agentes y subagentes
+
+Primero lee los 4 tipos de loops y sus recetas: [loops/README.md](loops/README.md)
 
 - **Flujo:** pasos definidos que Claude sigue en orden.
 - **Agente:** Claude recibe un objetivo, decide pasos y herramientas, verifica y repite.
